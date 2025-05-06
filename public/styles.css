@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif
+}
+
+/* THE NAV BAR STYLES */
+
+.manage-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+    background-color: #34495e;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    margin-top: 50px;
+    width: 600px;
+
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+
+}
+
+.nav-link-highlight {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #1289A7;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+}
+
+.nav-link-highlight:hover {
+  background-color: #34495e;
+}
+
+/* THE MAIN CONTENT STYLES */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.topic-title {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  width: 500px;
+}
+
+.topic-title-span {
+  color: #1289A7;
+  font-family: "Noto Serif", serif;
+}
+
+.content-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+  width: 420px;
+}
+
+.content-button {
+  padding: 10px 20px;
+  background-color: #1289A7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.content-btn-span {
+  color: #7ed6df;
+}
+
+.content-button:hover {
+  background-color: #34495e;
+}
+
+.content-todo-image {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: fit-content;
+  gap: 10px; 
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+
+.todo-group {
+  max-width: fit-content;
+  border-radius: 10px;
+  max-height: fit-content;
+  background-color: #ffffff;
+  color: #34495e;
+  padding: 5px;
+  text-align: center;
+}
+
+.todo-heading {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.the-one-line {
+  border-radius: 5px;
+  height: 60px;
+  width: 3px;
+  border: 1px solid #9980FA;
+  background-color: #9980FA;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 150px;
+  max-width: fit-content;
+  border: 1px solid #e9e5fc;
+  background-color: #e9e5fc;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.item-description {
+  margin-left: -30px;
+  text-align: left;
+}
+
+.descript-topic {
+  color: #9980FA;
+  margin-top: -10px;
+  margin-left: 40px;
+}
+
+.time-class {
+  color: #a4b0be;
+  margin-left: 40px;
+  font-size: 12px;
+  margin-top: -15px;
+}
+
+/* THE PROFILE IMAGES STYLES */
+
+.profile-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.profile {
+  position: relative;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid black;
+  padding: 5px;
+  background: white;
+  z-index: 2;
+}
+
+.calender-icon-con {
+  
+}
+
+
+@media (max-width: 768px) {
+  .content-wrapper {
+      flex-direction: column;
+  }
+  
+  .content-image {
+      max-width: 100%;
+  }
+}
